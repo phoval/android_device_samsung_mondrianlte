@@ -9,4 +9,3 @@ persist.telephony.oosisdc=false
 ril.subscription.types=NV,RUIM
 ro.ril.telephony.mqanelements=5
 ro.telephony.default_network=9
-ro.radio.noril=no

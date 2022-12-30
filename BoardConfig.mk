@@ -19,10 +19,6 @@ include device/samsung/mondrianwifi/BoardConfig.mk
 # HIDL
 DEVICE_MANIFEST_FILE += device/samsung/mondrianlte/manifest.xml
 
-# Legacy BLOB Support
-TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
-    /system/vendor/bin/hw/rild=27
-
 # Properties
 TARGET_SYSTEM_PROP += device/samsung/mondrianlte/system.prop
 
