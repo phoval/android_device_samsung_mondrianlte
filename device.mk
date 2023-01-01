@@ -38,7 +38,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsecnativefeature \
     libcnefeatureconfig \
-    librmnetctl
+    librmnetctl \
+    libshim_ril
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/mondrianlte/mondrianlte-vendor.mk)

@@ -1,5 +1,5 @@
-# Copyright (C) 2012 The CyanogenMod Project
-# Copyright (C) 2017-2019,2021 The LineageOS Project
+#
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,19 +12,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-# inherit from mondrianwifi
-include device/samsung/mondrianwifi/BoardConfig.mk
-
-# HIDL
-DEVICE_MANIFEST_FILE += device/samsung/mondrianlte/manifest.xml
-
-# Legacy BLOB Support
-TARGET_LD_SHIM_LIBS += \
-    /system/vendor/lib/libril-qc-qmi-1.so|libshim_ril.so
-
-# Properties
-TARGET_SYSTEM_PROP += device/samsung/mondrianlte/system.prop
-
-# inherit from the proprietary version
-include vendor/samsung/mondrianlte/BoardConfigVendor.mk
+include $(call first-makefiles-under,$(call my-dir))
