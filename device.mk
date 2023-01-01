@@ -34,6 +34,12 @@ PRODUCT_PACKAGES += \
     qmuxd.rc \
     netmgrd.rc
 
+# Radio
+PRODUCT_PACKAGES += \
+    libsecnativefeature \
+    libcnefeatureconfig \
+    librmnetctl
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/mondrianlte/mondrianlte-vendor.mk)
 
