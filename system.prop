@@ -1,11 +1,20 @@
 # Radio
+persist.radio.apm_sim_not_pwdn=1
 persist.data.netmgrd.qos.enable=true
 persist.data.qmi.adb_logmask=0
 persist.qcril.disable_retry=true
-rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
-ro.use_data_netmgrd=true
-persist.radio.apm_sim_not_pwdn=1
 persist.telephony.oosisdc=false
+persist.vendor.radio.enableadvancedscan=false
+persist.vendor.radio.mt_sms_ack=30
+persist.vendor.radio.rat_on=combine
 ril.subscription.types=NV,RUIM
+ro.baseband.arch=msm
+ro.data.large_tcp_window_size=true
+ro.ril.def.agps.mode=1
+ro.ril.hsupa.category=6
 ro.ril.telephony.mqanelements=5
 ro.telephony.default_network=9
+ro.telephony.call_ring.multiple=0
+ro.vendor.use_data_netmgrd=true
+telephony.lteOnGsmDevice=1
+vendor.rild.libpath=/vendor/lib/libril-qc-qmi-1.so
