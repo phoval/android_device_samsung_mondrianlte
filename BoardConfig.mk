@@ -26,5 +26,8 @@ TARGET_LD_SHIM_LIBS += \
 # Properties
 TARGET_SYSTEM_PROP += device/samsung/mondrianlte/system.prop
 
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += device/samsung/mondrianlte/sepolicy/vendor
+
 # inherit from the proprietary version
 include vendor/samsung/mondrianlte/BoardConfigVendor.mk
